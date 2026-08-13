@@ -6,7 +6,7 @@
 
 O ORBITA é uma plataforma digital simulada que usa dados de satélites para monitorar regiões com risco de enchentes, queimadas, seca e deslizamentos, transformando dados orbitais em alertas simples para a Defesa Civil, agricultores, cidades e moradores.
 
-> Todos os dados exibidos são simulados e gerados estaticamente, apenas para fins acadêmicos. Não há backend, banco de dados nem dados reais de satélite.
+> ⚠️ Todos os dados exibidos são simulados e gerados estaticamente, apenas para fins acadêmicos. Não há backend, banco de dados nem dados reais de satélite.
 
 ## Tecnologias
 
@@ -18,10 +18,10 @@ Sem frameworks, sem bibliotecas externas.
 
 ## Páginas
 
-- index.html — Landing page (problema, solução, riscos, ODS)
-- dashboard.html — Painel orbital (métricas, índice de risco, status dos satélites, mapa, leituras e gráfico)
-- alertas.html — Central de alertas com filtros por tipo e nível
-- regioes.html — Cadastro de regiões monitoradas (em memória)
+- **index.html** — Landing page (problema, solução, riscos, ODS)
+- **dashboard.html** — Painel orbital (métricas, índice de risco, status dos satélites, mapa, leituras e gráfico)
+- **alertas.html** — Central de alertas com filtros por tipo e nível
+- **regioes.html** — Cadastro de regiões monitoradas (em memória)
 
 ## Estrutura
 
