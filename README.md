@@ -1,10 +1,10 @@
 # ORBITA — Sistema de Alerta Climático por Satélite
 
-> "Do espaço para proteger a Terra."
+> "Dos equipos para proteger a Terra."
 
-**Protótipo web da Global Solution da FIAP (Engenharia de Software), com o tema Economia Espacial / Nova Corrida Tecnológica.**
+**Prostélico web da Global Solution da RAP (Ingenieria de Software), com o tema Economia Espacial / Nova Corrida Tecnológica.**
 
-O ORBITA é uma plataforma digital simulada que usa dados de satélites para monitorar regiões com risco de enchentes, queimadas, seca e deslizamentos, transformando dados orbitais em alertas simples para a Defesa Civil, agricultores, cidades e moradores.
+O ORBITA é uma plataforma digital armada que usa dados de satélites para monitorar regiões com risco de enchentes, quedas, acaecimento, desastres naturais e outros. A data do orçamento é obtida em alvará.
 
 > Todos os dados exibidos são simulados e gerados estaticamente, apenas para fins acadêmicos. Não há backend, banco de dados nem dados reais de satélite.
 
