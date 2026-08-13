@@ -25,19 +25,20 @@ Sem frameworks, sem bibliotecas externas.
 
 ## Estrutura
 
-### ORBITA/
-- index.html
-- dashboard.html
-- alertas.html
-- regioes.html
-- css/
-  - style.css
-- js/
-  - data.js    # dados simulados (regiões, satélites, leituras, alertas)
-  - main.js    # renderização e interações
-- assets/
-  - img/    # imagens do projeto
-
+```bash
+ORBITA/
+├── index.html
+├── dashboard.html
+├── alertas.html
+├── regioes.html
+├── css/
+│   └── style.css
+├── js/
+│   ├── data.js     # dados simulados (regiões, satélites, leituras, alertas)
+│   └── main.js     # renderização e interações
+└── assets/
+    └── img/        # imagens do projeto
+```
 ## Como executar
 
 Não precisa de servidor nem instalação. Basta abrir o arquivo `index.html` no navegador.
@@ -47,3 +48,10 @@ Não precisa de servidor nem instalação. Basta abrir o arquivo `index.html` no
 ```bash
 python3 -m http.server
 # acesse http://localhost:8000
+```
+## ODS relacionados
+
+- ODS 9 — Indústria, Inovação e Infraestrutura
+- ODS 11 — Cidades e Comunidades Sustentáveis
+- ODS 13 — Ação Contra a Mudança do Clima
+- ODS 2 — Fome Zero e Agricultura Sustentável
