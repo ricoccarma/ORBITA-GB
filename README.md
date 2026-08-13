@@ -1,10 +1,10 @@
 # ORBITA — Sistema de Alerta Climático por Satélite
 
-> "Dos equipos para proteger a Terra."
+> "Do espaço para proteger a Terra."
 
-**Prostélico web da Global Solution da RAP (Ingenieria de Software), com o tema Economia Espacial / Nova Corrida Tecnológica.**
+**Protótipo web da Global Solution da FIAP (Engenharia de Software), com o tema Economia Espacial / Nova Corrida Tecnológica.**
 
-O ORBITA é uma plataforma digital armada que usa dados de satélites para monitorar regiões com risco de enchentes, quedas, acaecimento, desastres naturais e outros. A data do orçamento é obtida em alvará.
+O ORBITA é uma plataforma digital simulada que usa dados de satélites para monitorar regiões com risco de enchentes, queimadas, seca e deslizamentos, transformando dados orbitais em alertas simples para a Defesa Civil, agricultores, cidades e moradores.
 
 > Todos os dados exibidos são simulados e gerados estaticamente, apenas para fins acadêmicos. Não há backend, banco de dados nem dados reais de satélite.
 
@@ -18,10 +18,10 @@ Sem frameworks, sem bibliotecas externas.
 
 ## Páginas
 
-- [index.html — Landing page (problema, solução, riscos, ODS)](https://example.com)
-- [dashboard.html — Painel orbital (métricas, índice de risco, status dos satélites, mapa, leituras e gráfico)](https://example.com)
-- [alertas.html — Central de alertas com filtros por tipo e nível](https://example.com)
-- [regioes.html — Cadastro de regiões monitoradas (em memória)](https://example.com)
+- index.html — Landing page (problema, solução, riscos, ODS)
+- dashboard.html — Painel orbital (métricas, índice de risco, status dos satélites, mapa, leituras e gráfico)
+- alertas.html — Central de alertas com filtros por tipo e nível
+- regioes.html — Cadastro de regiões monitoradas (em memória)
 
 ## Estrutura
 
@@ -31,16 +31,12 @@ Sem frameworks, sem bibliotecas externas.
 - alertas.html
 - regioes.html
 - css/
-- style.css
+  - style.css
 - js/
-- data.js
-- main.js
+  - data.js    # dados simulados (regiões, satélites, leituras, alertas)
+  - main.js    # renderização e interações
 - assets/
-- img/
-
-- dados simulados (regiões, satélites, leituras, alertas)
-- renderização e interações
-- imagens do projeto
+  - img/    # imagens do projeto
 
 ## Como executar
 
@@ -48,12 +44,6 @@ Não precisa de servidor nem instalação. Basta abrir o arquivo `index.html` no
 
 **Opcional (servidor local):**
 
+```bash
 python3 -m http.server
-# acesse http://localhost:8080
-
-## ODS relacionados
-
-- ODS 9 — Indústria, Inovação e Infraestrutura
-- ODS 11 — Cidades e Comunidades Sustentáveis
-- ODS 13 — Ação Contra a Mudança do Clima
-- ODS 2 — Fome Zero e Agricultura Sustentável
+# acesse http://localhost:8000
