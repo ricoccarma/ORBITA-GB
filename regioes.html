@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Regiões — ORBITA</title>
+  <meta name="description" content="Cadastro de regiões monitoradas pela plataforma ORBITA. Simulação em memória, sem banco de dados." />
+  <link rel="stylesheet" href="css/style.css?v=23" />
+</head>
+<body data-page="regioes">
+
+  <!-- Header injetado por main.js -->
+  <header class="site-header" id="siteHeader"></header>
+
+  <!-- ============ TÍTULO ============ -->
+  <div class="container page-head">
+    <span class="eyebrow">Expansão da malha</span>
+    <h1>Cadastro de Regiões <span class="text-cycle" data-words="Monitoradas|Vigiadas|Protegidas|em Risco">Monitoradas</span></h1>
+    <p>Adicione novas regiões à constelação ORBITA. O cadastro é simulado e mantido em memória durante a navegação — nada é enviado a um servidor ou banco de dados.</p>
+  </div>
+
+  <!-- ============ FORMULÁRIO ============ -->
+  <section class="container">
+    <div class="card form-card reveal">
+      <form id="formRegiao" novalidate>
+        <div class="form-grid">
+          <div class="field full">
+            <label for="nome">Nome da região</label>
+            <input type="text" id="nome" name="nome" placeholder="Ex.: Bacia do Rio Doce" />
+            <span class="error-msg"></span>
+          </div>
+
+          <div class="field">
+            <label for="pais">País</label>
+            <input type="text" id="pais" name="pais" value="Brasil" />
+            <span class="error-msg"></span>
+          </div>
+
+          <div class="field">
+            <label for="estado">Estado</label>
+            <select id="estado" name="estado">
+              <option value="">Selecione...</option>
+              <option>AC</option><option>AL</option><option>AP</option><option>AM</option>
+              <option>BA</option><option>CE</option><option>DF</option><option>ES</option>
+              <option>GO</option><option>MA</option><option>MT</option><option>MS</option>
+              <option>MG</option><option>PA</option><option>PB</option><option>PR</option>
+              <option>PE</option><option>PI</option><option>RJ</option><option>RN</option>
+              <option>RS</option><option>RO</option><option>RR</option><option>SC</option>
+              <option>SP</option><option>SE</option><option>TO</option>
+            </select>
+            <span class="error-msg"></span>
+          </div>
+
+          <div class="field">
+            <label for="cidade">Cidade</label>
+            <input type="text" id="cidade" name="cidade" placeholder="Ex.: Santos" />
+            <span class="error-msg"></span>
+          </div>
+
+          <div class="field">
+            <label for="area">Tipo de área</label>
+            <select id="area" name="area">
+              <option value="">Selecione...</option>
+              <option>Urbana</option>
+              <option>Rural</option>
+              <option>Florestal</option>
+              <option>Costeira</option>
+              <option>Agrícola</option>
+              <option>Montanhosa</option>
+            </select>
+            <span class="error-msg"></span>
+          </div>
+
+          <div class="field">
+            <label for="latitude">Latitude</label>
+            <input type="number" step="0.000001" min="-90" max="90" id="latitude" name="latitude" placeholder="Ex.: -23.9608" />
+            <span class="error-msg"></span>
+          </div>
+
+          <div class="field">
+            <label for="longitude">Longitude</label>
+            <input type="number" step="0.000001" min="-180" max="180" id="longitude" name="longitude" placeholder="Ex.: -46.3336" />
+            <span class="error-msg"></span>
+          </div>
+
+          <div class="field">
+            <label for="areaKm2">Área em km²</label>
+            <input type="number" step="0.01" min="0" id="areaKm2" name="areaKm2" placeholder="Ex.: 281.03" />
+            <span class="error-msg"></span>
+          </div>
+
+          <div class="field">
+            <label for="populacao">População estimada</label>
+            <input type="number" id="populacao" name="populacao" min="0" placeholder="Ex.: 120000" />
+            <span class="error-msg"></span>
+          </div>
+
+          <div class="field full">
+            <button type="submit" class="btn btn-primary">＋ Cadastrar região</button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <!-- ============ LISTA CADASTRADA ============ -->
+  <section class="container section">
+    <div class="section-head">
+      <span class="eyebrow">Suas regiões</span>
+      <h2 class="section-title">Regiões <span class="text-cycle" data-words="cadastradas|adicionadas|registradas">cadastradas</span> nesta sessão</h2>
+    </div>
+    <div class="grid grid-3" id="listaCadastro"><!-- cartões via main.js --></div>
+  </section>
+
+  <!-- Footer injetado por main.js -->
+  <footer class="site-footer" id="siteFooter" data-full="true"></footer>
+
+  <script src="js/data.js?v=23"></script>
+  <script src="js/main.js?v=23"></script>
+</body>
+</html>

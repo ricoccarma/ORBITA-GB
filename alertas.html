@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Alertas — ORBITA</title>
+  <meta name="description" content="Central de alertas climáticos da plataforma ORBITA, com filtros por tipo de evento e nível de risco." />
+  <link rel="stylesheet" href="css/style.css?v=23" />
+</head>
+<body data-page="alertas">
+
+  <!-- Header injetado por main.js -->
+  <header class="site-header" id="siteHeader"></header>
+
+  <!-- ============ TÍTULO ============ -->
+  <div class="container page-head">
+    <span class="eyebrow">Resposta rápida</span>
+    <h1>Central de <span class="text-cycle" data-words="Alertas|Riscos|Ameaças|Ocorrências">Alertas</span></h1>
+    <p>Alertas simulados gerados automaticamente pelo cruzamento das leituras satelitais. Filtre por tipo de evento e por nível de risco para priorizar a resposta.</p>
+  </div>
+
+  <!-- ============ FILTROS ============ -->
+  <section class="container">
+    <div class="card filters" id="filtros">
+      <div class="filter-group">
+        <span class="filter-label">Tipo de alerta</span>
+        <div class="chip-row">
+          <button class="chip active" data-grupo="tipo" data-valor="Todos">Todos</button>
+          <button class="chip" data-grupo="tipo" data-valor="Enchente"><span data-icon="wave"></span> Enchente</button>
+          <button class="chip" data-grupo="tipo" data-valor="Queimada"><span data-icon="fire"></span> Queimada</button>
+          <button class="chip" data-grupo="tipo" data-valor="Seca"><span data-icon="sun"></span> Seca</button>
+          <button class="chip" data-grupo="tipo" data-valor="Deslizamento"><span data-icon="mountain"></span> Deslizamento</button>
+        </div>
+      </div>
+      <div class="filter-group">
+        <span class="filter-label">Nível de risco</span>
+        <div class="chip-row">
+          <button class="chip active" data-grupo="nivel" data-valor="Todos">Todos</button>
+          <button class="chip" data-grupo="nivel" data-valor="Baixo">Baixo</button>
+          <button class="chip" data-grupo="nivel" data-valor="Moderado">Moderado</button>
+          <button class="chip" data-grupo="nivel" data-valor="Alto">Alto</button>
+          <button class="chip" data-grupo="nivel" data-valor="Crítico">Crítico</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ LISTA DE ALERTAS ============ -->
+  <section class="container section" style="padding-top:18px">
+    <p class="results-count" id="resultsCount"></p>
+    <div class="grid grid-2" id="alertasGrid"><!-- cartões via main.js --></div>
+  </section>
+
+  <!-- Footer injetado por main.js -->
+  <footer class="site-footer" id="siteFooter" data-full="true"></footer>
+
+  <script src="js/data.js?v=23"></script>
+  <script src="js/main.js?v=23"></script>
+</body>
+</html>
